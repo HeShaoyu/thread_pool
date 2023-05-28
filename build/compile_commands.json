@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/home/hsy/Documents/workspace/thread_pool/build",
+  "command": "/usr/bin/c++   -I/home/hsy/Documents/workspace/thread_pool/build -I/home/hsy/Documents/workspace/thread_pool -I/home/hsy/Documents/workspace/thread_pool/include   -O0 -Wall -g -ggdb   -std=gnu++14 -o CMakeFiles/hello.dir/DSSAD/kmp.cpp.o -c /home/hsy/Documents/workspace/thread_pool/DSSAD/kmp.cpp",
+  "file": "/home/hsy/Documents/workspace/thread_pool/DSSAD/kmp.cpp"
+}
+]

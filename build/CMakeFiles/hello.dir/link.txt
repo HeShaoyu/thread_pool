@@ -1,0 +1,1 @@
+/usr/bin/c++   -O0 -Wall -g -ggdb   CMakeFiles/hello.dir/DSSAD/kmp.cpp.o  -o hello  -lpthread 
