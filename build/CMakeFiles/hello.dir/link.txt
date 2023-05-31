@@ -1,1 +1,1 @@
-/usr/bin/c++   -O0 -Wall -g -ggdb   CMakeFiles/hello.dir/DSSAD/kmp.cpp.o  -o hello  -lpthread 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ -g -arch arm64 -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/hello.dir/DSSAD/kmp.cpp.o -o hello  -lpthread 

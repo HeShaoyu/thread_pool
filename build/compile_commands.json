@@ -1,7 +1,8 @@
 [
 {
-  "directory": "/home/hsy/Documents/workspace/thread_pool/build",
-  "command": "/usr/bin/c++   -I/home/hsy/Documents/workspace/thread_pool/build -I/home/hsy/Documents/workspace/thread_pool -I/home/hsy/Documents/workspace/thread_pool/include   -O0 -Wall -g -ggdb   -std=gnu++14 -o CMakeFiles/hello.dir/DSSAD/kmp.cpp.o -c /home/hsy/Documents/workspace/thread_pool/DSSAD/kmp.cpp",
-  "file": "/home/hsy/Documents/workspace/thread_pool/DSSAD/kmp.cpp"
+  "directory": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include -g -std=gnu++14 -arch arm64 -o CMakeFiles/hello.dir/DSSAD/kmp.cpp.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/DSSAD/kmp.cpp",
+  "file": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/DSSAD/kmp.cpp",
+  "output": "CMakeFiles/hello.dir/DSSAD/kmp.cpp.o"
 }
 ]

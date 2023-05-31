@@ -13,7 +13,8 @@ message("========================================")
 message("================DEBUG===================")
 message("========================================")
 set(CMAKE_BUILD_TYPE DEBUG)
-set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
+# set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -glldb")
+# message("$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
@@ -50,6 +51,7 @@ endif()
 
 # SET(SRC_LIST src/sem.cpp)
 SET(SRC_LIST DSSAD/kmp.cpp)
+# include_directories(/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++)
 #目前暂时先了解SET指令用来显式定义变量
 MESSAGE(STATUS "This is Binary dir" ${HELLO_BINARY_DIR})
 MESSAGE(STATUS "This is SOURCE dir" ${HELLO_SOURCE_DIR})

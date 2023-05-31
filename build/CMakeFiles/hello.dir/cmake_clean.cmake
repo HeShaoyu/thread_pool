@@ -1,5 +1,6 @@
 file(REMOVE_RECURSE
   "CMakeFiles/hello.dir/DSSAD/kmp.cpp.o"
+  "CMakeFiles/hello.dir/DSSAD/kmp.cpp.o.d"
   "hello"
   "hello.pdb"
 )

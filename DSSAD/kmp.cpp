@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-
+#include <iostream>
 struct String
 {
     char* data;
@@ -113,15 +113,16 @@ void kmpMatch(String* master, String* sub, int* next)
 
 int main(int argc, char* argv[])
 {
-    String* s1 = initString();
-    String* s2 = initString();
-    char* s3 = "abababababc";
-    char* s4 = "abcd";
-    stringAssign(s1, s3);
-    stringAssign(s2, s4);
-    // printString(s);
-    int* next = getNext(s2);
-    // printNext(next, s->len);
-    kmpMatch(s1, s2, next);
+    // String* s1 = initString();
+    // String* s2 = initString();
+    // char* s3 = "abababababc";
+    // char* s4 = "abcd";
+    // stringAssign(s1, s3);
+    // stringAssign(s2, s4);
+    // // printString(s);
+    // int* next = getNext(s2);
+    // // printNext(next, s->len);
+    // kmpMatch(s1, s2, next);
+    std::cout << "hello world" << std::endl;
     return 0;
 }
