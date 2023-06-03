@@ -57,10 +57,10 @@ RM = /opt/homebrew/Cellar/cmake/3.26.4/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/hectorjoker/Documents/workspace/2023/05/thread_pool
+CMAKE_SOURCE_DIR = /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/src/v6
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build
+CMAKE_BINARY_DIR = /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/src/v6/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,9 +87,9 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build//CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/src/v6/build/CMakeFiles /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/src/v6/build//CMakeFiles/progress.marks
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/src/v6/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -117,41 +117,41 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named hello
+# Target rules for targets named app
 
 # Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
-.PHONY : hello
+app: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
+.PHONY : app
 
 # fast build rule for target.
-hello/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/build
-.PHONY : hello/fast
+app/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/build
+.PHONY : app/fast
 
-DSSAD/treeLevelTraversal.o: DSSAD/treeLevelTraversal.cpp.o
-.PHONY : DSSAD/treeLevelTraversal.o
+test.o: test.cpp.o
+.PHONY : test.o
 
 # target to build an object file
-DSSAD/treeLevelTraversal.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/DSSAD/treeLevelTraversal.cpp.o
-.PHONY : DSSAD/treeLevelTraversal.cpp.o
+test.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/test.cpp.o
+.PHONY : test.cpp.o
 
-DSSAD/treeLevelTraversal.i: DSSAD/treeLevelTraversal.cpp.i
-.PHONY : DSSAD/treeLevelTraversal.i
+test.i: test.cpp.i
+.PHONY : test.i
 
 # target to preprocess a source file
-DSSAD/treeLevelTraversal.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/DSSAD/treeLevelTraversal.cpp.i
-.PHONY : DSSAD/treeLevelTraversal.cpp.i
+test.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/test.cpp.i
+.PHONY : test.cpp.i
 
-DSSAD/treeLevelTraversal.s: DSSAD/treeLevelTraversal.cpp.s
-.PHONY : DSSAD/treeLevelTraversal.s
+test.s: test.cpp.s
+.PHONY : test.s
 
 # target to generate assembly for a file
-DSSAD/treeLevelTraversal.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/hello.dir/build.make CMakeFiles/hello.dir/DSSAD/treeLevelTraversal.cpp.s
-.PHONY : DSSAD/treeLevelTraversal.cpp.s
+test.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/app.dir/build.make CMakeFiles/app.dir/test.cpp.s
+.PHONY : test.cpp.s
 
 # Help Target
 help:
@@ -161,10 +161,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... hello"
-	@echo "... DSSAD/treeLevelTraversal.o"
-	@echo "... DSSAD/treeLevelTraversal.i"
-	@echo "... DSSAD/treeLevelTraversal.s"
+	@echo "... app"
+	@echo "... test.o"
+	@echo "... test.i"
+	@echo "... test.s"
 .PHONY : help
 
 

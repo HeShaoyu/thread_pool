@@ -50,7 +50,7 @@ endif()
     
 
 # SET(SRC_LIST src/sem.cpp)
-SET(SRC_LIST DSSAD/kmp.cpp)
+SET(SRC_LIST DSSAD/treeLevelTraversal.cpp)
 # include_directories(/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++)
 #目前暂时先了解SET指令用来显式定义变量
 MESSAGE(STATUS "This is Binary dir" ${HELLO_BINARY_DIR})
