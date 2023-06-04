@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code//CMakeFiles/progress.marks
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 course_code/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 course_code/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,31 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 course_code/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 course_code/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named hello
+# Convenience name for target.
+course_code/CMakeFiles/hello.dir/rule:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 course_code/CMakeFiles/hello.dir/rule
+.PHONY : course_code/CMakeFiles/hello.dir/rule
 
-# Build rule for target.
-hello: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 hello
+# Convenience name for target.
+hello: course_code/CMakeFiles/hello.dir/rule
 .PHONY : hello
 
 # fast build rule for target.
 hello/fast:
-	$(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
+
+CPP/02DataType/Char.o: CPP/02DataType/Char.cpp.o
+.PHONY : CPP/02DataType/Char.o
+
+# target to build an object file
+CPP/02DataType/Char.cpp.o:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.o
+.PHONY : CPP/02DataType/Char.cpp.o
+
+CPP/02DataType/Char.i: CPP/02DataType/Char.cpp.i
+.PHONY : CPP/02DataType/Char.i
+
+# target to preprocess a source file
+CPP/02DataType/Char.cpp.i:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.i
+.PHONY : CPP/02DataType/Char.cpp.i
+
+CPP/02DataType/Char.s: CPP/02DataType/Char.cpp.s
+.PHONY : CPP/02DataType/Char.s
+
+# target to generate assembly for a file
+CPP/02DataType/Char.cpp.s:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.s
+.PHONY : CPP/02DataType/Char.cpp.s
 
 # Help Target
 help:
@@ -138,6 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
+	@echo "... CPP/02DataType/Char.o"
+	@echo "... CPP/02DataType/Char.i"
+	@echo "... CPP/02DataType/Char.s"
 .PHONY : help
 
 
@@ -149,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

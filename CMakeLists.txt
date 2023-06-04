@@ -50,7 +50,7 @@ endif()
     
 
 # SET(SRC_LIST src/sem.cpp)
-SET(SRC_LIST DSSAD/treeLevelTraversal.cpp)
+SET(SRC_LIST DSSAD/treeNonRecursivePost.cpp)
 # include_directories(/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang++)
 #目前暂时先了解SET指令用来显式定义变量
 MESSAGE(STATUS "This is Binary dir" ${HELLO_BINARY_DIR})
@@ -61,6 +61,6 @@ MESSAGE(STATUS "This is SOURCE dir" ${HELLO_SOURCE_DIR})
 # STATUS: 输出前缀为-的信息
 # FATAL_ERROR: 立即终止所有cmake过程
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
-ADD_EXECUTABLE(hello ${SRC_LIST})
-target_link_libraries(hello pthread)
- 
+# ADD_EXECUTABLE(hello ${SRC_LIST})
+# target_link_libraries(hello pthread)
+add_subdirectory(${CMAKE_CURRENT_SOURCE_DIR}/course_code)
