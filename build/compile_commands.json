@@ -1,8 +1,8 @@
 [
 {
   "directory": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/include  -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/02DataType/Char.cpp",
-  "file": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/02DataType/Char.cpp",
-  "output": "course_code/CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.o"
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/cc  -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/include -g -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/hello.dir/C/01/HelloWorld.c.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/C/01/HelloWorld.c",
+  "file": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/C/01/HelloWorld.c",
+  "output": "course_code/CMakeFiles/hello.dir/C/01/HelloWorld.c.o"
 }
 ]

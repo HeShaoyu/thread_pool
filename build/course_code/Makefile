@@ -130,29 +130,29 @@ hello/fast:
 	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-CPP/02DataType/Char.o: CPP/02DataType/Char.cpp.o
-.PHONY : CPP/02DataType/Char.o
+C/01/HelloWorld.o: C/01/HelloWorld.c.o
+.PHONY : C/01/HelloWorld.o
 
 # target to build an object file
-CPP/02DataType/Char.cpp.o:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.o
-.PHONY : CPP/02DataType/Char.cpp.o
+C/01/HelloWorld.c.o:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/01/HelloWorld.c.o
+.PHONY : C/01/HelloWorld.c.o
 
-CPP/02DataType/Char.i: CPP/02DataType/Char.cpp.i
-.PHONY : CPP/02DataType/Char.i
+C/01/HelloWorld.i: C/01/HelloWorld.c.i
+.PHONY : C/01/HelloWorld.i
 
 # target to preprocess a source file
-CPP/02DataType/Char.cpp.i:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.i
-.PHONY : CPP/02DataType/Char.cpp.i
+C/01/HelloWorld.c.i:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/01/HelloWorld.c.i
+.PHONY : C/01/HelloWorld.c.i
 
-CPP/02DataType/Char.s: CPP/02DataType/Char.cpp.s
-.PHONY : CPP/02DataType/Char.s
+C/01/HelloWorld.s: C/01/HelloWorld.c.s
+.PHONY : C/01/HelloWorld.s
 
 # target to generate assembly for a file
-CPP/02DataType/Char.cpp.s:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/Char.cpp.s
-.PHONY : CPP/02DataType/Char.cpp.s
+C/01/HelloWorld.c.s:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/01/HelloWorld.c.s
+.PHONY : C/01/HelloWorld.c.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
-	@echo "... CPP/02DataType/Char.o"
-	@echo "... CPP/02DataType/Char.i"
-	@echo "... CPP/02DataType/Char.s"
+	@echo "... C/01/HelloWorld.o"
+	@echo "... C/01/HelloWorld.i"
+	@echo "... C/01/HelloWorld.s"
 .PHONY : help
 
 
