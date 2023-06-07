@@ -27,8 +27,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
 # file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/01CPPFirst/NameRule.cpp)
-# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/02DataType/Char.cpp)
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/01/HelloWorld.c)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/02DataType/fourRule.cpp)
+# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/01/HelloWorld.c)
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

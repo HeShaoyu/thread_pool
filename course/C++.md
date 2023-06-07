@@ -190,4 +190,127 @@ int main()
     return 0;
 }
 ```
-## 学完11 数据类型-字符型
+### 2.5 转义字符
+用于显示一些不能显示出来的ASCII字符
+```c++
+#include <iostream>
+
+int main()
+{
+    // 转义字符
+    // 换行符 \n
+    std::cout << "hello world\n";
+    // 反斜杠
+    std::cout << "\\" << std::endl;
+    // 水平制表符 整齐地输出数据
+    std::cout << "aaa\thelloworld" << std::endl;
+    std::cout << "aa\thelloworld" << std::endl;
+    std::cout << "aaaa\thelloworld" << std::endl;
+    return 0;
+}
+```
+### 2.6 字符串型
+用于表示一串字符
+1. C风格字符串 char 变量名[] = "字符串值"
+2. C++风格字符串 string 变量名 = "字符串值"
+```c++
+#include <iostream>
+#include <string>
+int main()
+{
+    // C风格字符串
+    // 注意事项1 char 字符串名[] 
+    // 注意事项2 等号后面要用双引号包含起来
+    char str[] = "hello world";
+    std::cout << str << std::endl;
+
+    // C++风格字符串
+    // 注意事项，包含一个头文件 #include <string>
+    std::string str2 = "hello world";
+    std::cout << str2 << std::endl;
+    return 0;
+}
+```
+### 2.7 布尔类型
+布尔数据类型代表真或者假的值
+true 真 1
+false 假 0
+占用一个字节大小
+```c++
+#include <iostream>
+
+int main()
+{
+    // 1. 创建bool数据类型
+    bool flag = true;
+    std::cout << flag << std::endl; // 1
+    flag = false;
+    std::cout << flag << std::endl; // 0
+    // 2. 查看bool类型所占内存空间大小
+    std::cout << "bool类型占用" << sizeof(bool) << "字节" << std::endl; // 1
+    return 0;
+}
+```
+### 2.8 数据的输入
+用于从键盘获取数据
+关键字：cin
+语法：cin >> 变量
+```c++
+#include <iostream>
+#include <string>
+int main()
+{
+
+    // 1. 整型
+    int a = 0;
+    std::cout << "请给整型变量a赋值： " << std::endl;
+    std::cin >> a;
+    std::cout << "a: " << a << std::endl;
+    // 2. 浮点型
+    float f = 3.14f;
+    std::cout << "请给浮点型变量f赋值：" << std::endl;
+    std::cin >> f;
+    std::cout << "f: " << f << std::endl;
+    // 3. 字符型
+    char ch = 'a';
+    std::cout << "请给字符型变量赋值：" << std::endl;
+    std::cin >> ch;
+    std::cout << "ch: " << ch << std::endl;
+    // 4. 字符串型
+    std::string str = "hello";
+    std::cout << "请给字符串str赋值: " << std::endl;
+    std::cin >> str;
+    std::cout << "字符串str: " << str << std::endl;
+    // 5. 布尔类型
+    bool flag = false;
+    std::cout << "请给bool类型的flag赋值: " << std::endl;
+    std::cin >> flag; // 不能打英文 打1 true 2 false bool只要非0值，即为真
+    std::cout << "flag: " << flag << std::endl;
+    return 0;
+}
+```
+### 3.1 算术运算符
+用于处理四则运算
+```c++
+#include <iostream>
+
+int main()
+{
+    // 加减乘除
+    int a1 = 10;
+    int b1 = 3;
+    std::cout << a1 + b1 << std::endl;
+    std::cout << a1 - b1 << std::endl;
+    std::cout << a1 * b1 << std::endl;
+    std::cout << a1 / b1 << std::endl; //两个整数相除，结果依然是整数，将小数部分去掉
+
+    int a2 = 10;
+    int b2 = 20;
+    std::cout << a2 / b2 << std::endl;
+    // 两个小数可以相除吗？
+    double d1 = 0.5;
+    double d2 = 0.22;
+    std::cout << d1 / d2 << std::endl;
+    return 0;
+}
+```

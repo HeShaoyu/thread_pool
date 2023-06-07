@@ -130,29 +130,29 @@ hello/fast:
 	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-C/01/HelloWorld.o: C/01/HelloWorld.c.o
-.PHONY : C/01/HelloWorld.o
+CPP/02DataType/fourRule.o: CPP/02DataType/fourRule.cpp.o
+.PHONY : CPP/02DataType/fourRule.o
 
 # target to build an object file
-C/01/HelloWorld.c.o:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/01/HelloWorld.c.o
-.PHONY : C/01/HelloWorld.c.o
+CPP/02DataType/fourRule.cpp.o:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/fourRule.cpp.o
+.PHONY : CPP/02DataType/fourRule.cpp.o
 
-C/01/HelloWorld.i: C/01/HelloWorld.c.i
-.PHONY : C/01/HelloWorld.i
+CPP/02DataType/fourRule.i: CPP/02DataType/fourRule.cpp.i
+.PHONY : CPP/02DataType/fourRule.i
 
 # target to preprocess a source file
-C/01/HelloWorld.c.i:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/01/HelloWorld.c.i
-.PHONY : C/01/HelloWorld.c.i
+CPP/02DataType/fourRule.cpp.i:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/fourRule.cpp.i
+.PHONY : CPP/02DataType/fourRule.cpp.i
 
-C/01/HelloWorld.s: C/01/HelloWorld.c.s
-.PHONY : C/01/HelloWorld.s
+CPP/02DataType/fourRule.s: CPP/02DataType/fourRule.cpp.s
+.PHONY : CPP/02DataType/fourRule.s
 
 # target to generate assembly for a file
-C/01/HelloWorld.c.s:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/01/HelloWorld.c.s
-.PHONY : C/01/HelloWorld.c.s
+CPP/02DataType/fourRule.cpp.s:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/02DataType/fourRule.cpp.s
+.PHONY : CPP/02DataType/fourRule.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
-	@echo "... C/01/HelloWorld.o"
-	@echo "... C/01/HelloWorld.i"
-	@echo "... C/01/HelloWorld.s"
+	@echo "... CPP/02DataType/fourRule.o"
+	@echo "... CPP/02DataType/fourRule.i"
+	@echo "... CPP/02DataType/fourRule.s"
 .PHONY : help
 
 
