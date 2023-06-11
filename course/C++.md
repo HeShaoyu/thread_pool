@@ -289,8 +289,9 @@ int main()
     return 0;
 }
 ```
+## 3. 运算符
 ### 3.1 算术运算符
-用于处理四则运算
+#### 四则运算
 ```c++
 #include <iostream>
 
@@ -314,3 +315,224 @@ int main()
     return 0;
 }
 ```
+#### 取模
+```c++
+10 % 3 = 1
+10 % 0 // 不可，除数不能为0
+double d1 = 3.14
+double d2 = 1.1
+double d3 = d1 % d2 // 不可，浮点数不可以取模运算
+```
+#### 前置后置递增运算
+前置递增先对变量++，再计算表达式，后置就相反
+```c++
+#include <iostream>
+
+int main()
+{
+    // 1.前置递增
+    int a = 10;
+    ++a;
+    std::cout << "a = " << a << std::endl;
+
+    // 2.后置递增
+    int b = 10;
+    b++;
+    std::cout << "b = " << b << std::endl;
+
+    // 3.前置和后置的区别
+    // 前置递增，先+1，再表达式计算
+    int a2 = 10;
+    int b2 = ++a2 * 10;
+    std::cout << "a2 = " << a2 << std::endl;
+    std::cout << "b2 = " << b2 << std::endl;
+    // 后置递增，先计算，再+1
+    int a3 = 10;
+    int b3 = a3++ * 10;
+    std::cout << "a3 = " << a3 << std::endl;
+    std::cout << "b3 = " << b3 << std::endl;
+}
+```
+### 3.2 赋值运算符
+- = 赋值
+- += 加等于
+- -= 减等于
+- *= 乘等于
+- /= 除等于
+- %= 模等于
+```c++
+#include <iostream>
+
+int main()
+{
+    // 赋值运算
+    int a = 10;
+    a = 100;
+    std::cout << "a = " << a << std::endl;
+    // +=
+    a = 10;
+    a += 2; // a = a + 2;
+    std::cout << "a = " << a << std::endl;
+    // -=
+    a = 10;
+    a -= 2; // a = a -2;
+    std::cout << "a = " << a << std::endl;
+    // *=
+    a = 10;
+    a *= 2; // a = a * 2;
+    std::cout << "a = " << a << std::endl;
+    // /=
+    a = 10;
+    a /= 2; // a = a / 2;
+    std::cout << "a = " << a << std::endl;
+    // %=
+    a = 10;
+    a %= 2; // a = a % 2;
+    std::cout << "a = " << a << std::endl;
+    return 0;
+}
+```
+### 3.3 比较运算符
+- == 相等于
+- ！= 不等于
+- $>$ 大于
+- $<$ 小于
+- $>=$ 大于等于
+- $<=$ 小于等于
+```c++
+#include <iostream>
+
+int main()
+{
+    // ==
+    int a = 10;
+    int b = 20;
+    std::cout << (a == b) << std::endl;
+    // !=
+    std::cout << (a != b) << std::endl;
+    // >
+    std::cout << (a > b) << std::endl;
+    // <
+    std::cout << (a < b) << std::endl;
+    // >=
+    std::cout << (a >= b) << std::endl;
+    // <=
+    std::cout << (a <= b) << std::endl;
+    return 0;
+}
+```
+### 3.4 逻辑运算法
+- ! 非
+- && 与
+- || 或
+```c++
+#include <iostream>
+
+int main()
+{
+    // 逻辑运算符 非 !
+    int a = 10;
+    // 在c++中，除了0，都为真
+    std::cout << !a << std::endl;
+    std::cout << !!a << std::endl;
+    // 逻辑运算符 与 &&
+    // 同真为真，其余为假
+    int b = 10;
+    int c = 10;
+    std::cout << (b && c) << std::endl;
+    b = 10;
+    c = 0;
+    std::cout << (b && c) << std::endl;
+    // 逻辑运算符 或 ||
+    // 同假为假，其余为真
+    int d = 10;
+    int e = 10;
+    std::cout << (d || e) << std::endl;
+    d = 10;
+    e = 0;
+    std::cout << (d || e) << std::endl;
+    d = 0;
+    e = 0;
+    std::cout << (d || e) << std::endl;
+    return 0;
+}
+```
+## 4. 程序流程结构
+C/C++支持最基本的三种程序运行结构：顺序结构、选择结构、循环结构
+- 顺序结构：程序按顺序执行，不发生跳转
+- 选择结构：依据条件是否满足，有选择的执行相应功能
+- 循环结构：依据条件是否满足，循环多次执行某段代码
+### 4.1 选择结构
+#### 4.1.1 if语句
+- 单行格式if语句
+- 多行格式if语句
+- 多条件if语句
+- 嵌套if语句 
+```c++
+#include <iostream>
+
+int main()
+{
+    // 选择结构
+    // 单行if语句
+    // 用户输入分数，如果分数大于600，视为考上一本大学
+    // 1. 用户输入分数
+    int score = 0;
+    std::cout << "请输入一个分数：" << std::endl;
+    std::cin >> score;
+    // 2. 打印用户输入的分数
+    std::cout << "您输入的分数为：" << score << std::endl;
+    // 3. 判断分数是否大于600，如果大于，输出
+    // 注意事项，if条件后面不要加分号
+    if (score > 600)
+    {
+        std::cout << "恭喜您考上了一本大学" << std::endl;
+    }
+    // 多行if语句
+    // 输入考试分数，如果分数大于600，考上一本，没有考上，打印未考上
+    std::cout << "请再次输入分数：" << std::endl;
+    std::cin >> score;
+    std::cout << "您考了" << score << "分" << std::endl;
+    if (score > 600)
+    {
+        std::cout << "恭喜考上一本" << std::endl;
+    }
+    else
+    {
+        std::cout << "很遗憾，未考上一本" << std::endl;
+    }
+    // 多条件if语句
+    // 输入一个考试分数，如果大于600，视为考上一本
+    // 大于500分，视为考上二本
+    // 大于400分，视为考上三本
+    // 否则带专
+    std::cout << "请您最后一次输入分数：" << std::endl;
+    std::cin >> score;
+    std::cout << "您考了" << score << "分" << std::endl;
+    if (score > 600)
+    {
+        std::cout << "考上了一本" << std::endl;
+    }
+    else if (score > 500)
+    {
+        std::cout << "考上了二本" << std::endl;
+    }
+    else if (score > 400)
+    {
+        std::cout << "考上了三本" << std::endl;
+    }
+    else
+    {
+        std::cout << "考上了带专" << std::endl;
+    }
+    
+    return 0;
+}
+```
+
+### 4.2 循环结构
+### 4.3 跳转结构
+## 5. 数组
+## 6. 函数
+## 7. 指针
+## 8. 结构题
