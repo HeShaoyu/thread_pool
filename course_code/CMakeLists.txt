@@ -28,7 +28,7 @@ endif()
 
 # file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/01CPPFirst/NameRule.cpp)
 # file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/02DataType/fourRule.cpp)
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/04FlowPath/ifFlow.cpp)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/04FlowPath/multiFormular.cpp)
 # file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/01/basicRule.cpp)
 
 
