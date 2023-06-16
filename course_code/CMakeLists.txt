@@ -28,8 +28,8 @@ endif()
 
 # file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/01CPPFirst/NameRule.cpp)
 # file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/02DataType/fourRule.cpp)
-# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/04FlowPath/multiFormular.cpp)
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/02/binary.cpp)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/04FlowPath/doWhile.cpp)
+# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/02/binary.cpp)
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)

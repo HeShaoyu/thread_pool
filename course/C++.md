@@ -529,10 +529,115 @@ int main()
     return 0;
 }
 ```
+#### 4.1.2 三目运算符
+作用：通过三目运算符实现简单的判断
+语法：表达式1 ? 表达式2 : 表达式3
+如果表达式1的值为真，执行表达式2，并返回表达式2的结果
+如果表达式1的值为假，执行表达式3，并返回表达式3点结果
+```c++
+#include <iostream>
 
+int main()
+{
+    // 三目运算符
+    // 创建三个变量 a b c
+    // 将a 和 b比较，将值大的值赋给c
+    int a = 10;
+    int b = 20;
+    int c = 0;
+
+    c = a > b ? a : b;
+
+    // C++中三目运算符返回的是变量，可以继续赋值
+    (a > b ? a : b) = 100;
+    std::cout << "a= " << a << " b=" << b << std::endl;
+    std::cout << c << std::endl;
+    return 0;
+}
+```
+#### 4.1.3 switch语句
+作用：执行多条件分支语句
+```c++
+#include <iostream>
+
+int main()
+{
+    // switch语句
+    // 给一个电影打分
+    std::cout << "请给电影打分" << std::endl;
+    int score = 0;
+    std::cin >> score;
+    std::cout << "您打的分数为：" << score << std::endl;
+    switch (score)
+    {
+    case 10:
+        std::cout << "您认为是经典电影" << std::endl;
+        break; // 退出当前分支
+    case 9:
+        std::cout << "您认为是经典电影" << std::endl;
+        break;
+    case 8:
+        std::cout << "您认为电影非常好" << std::endl;
+        break;
+    case 7:
+        std::cout << "您认为电影非常好" << std::endl;
+        break;
+    case 6:
+        std::cout << "您认为电影一般" << std::endl;
+        break;
+    case 5:
+        std::cout << "您认为电影一般" << std::endl;
+        break;
+    default:
+        std::cout << "您认为这是烂片" << std::endl;
+        break;    
+    }
+    // if 和 switch区别
+    // switch 缺点，判断时候只能是整型或字符型，不可以是一个区间
+    // switch 优点，结构清晰，执行效率高
+    return 0;
+}
+```
 ### 4.2 循环结构
+#### 4.2.1 while循环语句
+作用：满足循环条件，执行循环语句
+语法: while(循环条件){循环语句}
+解释: 只要循环条件的结果为真，就执行循环语句
+```c++
+#include <iostream>
+
+int main()
+{
+    // 在屏幕中打印0-9
+    int num = 0;
+    // 注意事项：一定要避免死循环出现
+    while (num < 10)
+    {
+        std::cout << num++ << std::endl;
+    }
+    
+    return 0;
+}
+```
+#### 4.2.2 do...while循环
+作用：满足循环条件，执行循环语句
+语法：do{循环语句}while(循环条件);
+```c++
+#include <iostream>
+
+int main()
+{
+    // 在屏幕中输出0-9
+    int num = 0;
+    do
+    {
+        std::cout << num++ << std::endl;
+    }while(num < 10);
+    return 0;
+}
+```
 ### 4.3 跳转结构
 ## 5. 数组
 ## 6. 函数
 ## 7. 指针
-## 8. 结构题
+## 8. 结构体
