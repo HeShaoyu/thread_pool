@@ -636,8 +636,243 @@ int main()
     return 0;
 }
 ```
+##### 水仙花数
+```c++
+#include <iostream>
+#include <cmath>
+int main()
+{
+    int i = 100;
+    while (i < 1000)
+    {
+        int num1 = i % 10; // 个位
+        int num2 = i / 100; // 百位
+        int num3 = (i / 10) % 10; // 十位
+        int sum = pow(num1, 3) + pow(num2, 3) + pow(num3, 3);
+        if (sum == i++)
+        {
+            std::cout << i - 1 << std::endl;
+        }
+    }
+    
+    return 0;
+}
+```
+#### 4.2.3 for循环语句
+作用：满足循环条件，执行循环语句
+```c++
+#include <iostream>
+
+int main()
+{
+    // for循环，从0打印到9
+    /*
+    设 语句0: int i = 0
+       语句1: i < 10
+       语句2: std::cout << "i=" << i << std::endl;
+       语句3: i++
+    实际上执行顺序是 0 1 2 3 1 2 3 1 2 3 。。。1
+    */
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << "i=" << i << std::endl;
+    }
+    // 等价于
+    int i = 0;
+    for (;;)
+    {
+        if (i >= 10)
+        {
+            break;
+        }
+        std::cout << "i=" << i << std::endl;
+        i++;
+    }
+    return 0;
+}
+```
+注意：for循环中的表达式，要用分号隔离
+##### 敲桌子
+```c++
+#include <iostream>
+
+int main()
+{
+    for (int i = 1; i <= 100; i++)
+    {
+        // 寻找敲桌子次数
+        int num1 = i % 10;
+        int num2 = i / 10;
+        if (i % 7 == 0 or num1 == 7 or num2 == 7)
+        {
+            std::cout << i << " 敲桌子" << std::endl;
+        }
+    }
+    return 0;
+}
+```
+#### 4.2.4 嵌套循环
+作用：在循环体中加入循环，实现嵌套效果
+```c++
+#include <iostream>
+
+int main()
+{
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            std::cout << "* ";
+        }
+        std::cout << std::endl;
+    }
+    for (int i = 1; i <= 9; i++)
+    {
+        for (int j = 1; j <= i; j++)
+        {
+            std::cout << j << "x" << i << " = " << i*j << " ";
+        }
+        std::cout << std::endl;
+    }
+    return 0;
+}
+```
 ### 4.3 跳转结构
+#### 4.3.1 break语句
+作用：用于跳出选择结构或者循环结构
+
+break使用的时机：
+- 出现在switch条件语句中，作用是终止case并跳出switch
+- 出现在循环语句中，作用是跳出当前的循环语句
+- 出现在嵌套循环中，跳出最近的内层循环语句
+```c++
+#include <iostream>
+
+int main()
+{
+    // 1.switch
+    std::cout << "请选择副本的难度：" << std::endl;
+    std::cout << "1. 普通\n2. 中等\n3. 困难" << std::endl;
+    int select = 0;
+    std::cin >> select;
+    switch (select)
+    {
+    case 1: 
+        std::cout << "您选择了普通难度" << std::endl;
+        break;
+    case 2: 
+        std::cout << "您选择了中等难度" << std::endl;
+        break;
+    case 3: 
+        std::cout << "您选择了困难难度" << std::endl;
+        break;
+    default:
+        break;
+    }
+    // 2.循环语句中
+    for (int i = 0; i < 10; i++)
+    {
+        std::cout << i << std::endl;
+        if (i == 5)
+        {
+            break;
+        }
+    }
+    // 3.嵌套循环
+    for (int i = 0; i < 10; i++)
+    {
+        for (int j = 0; j < 10; j++)
+        {
+            std::cout << "* ";
+            if (i == j)
+            {
+                break;
+            }
+            
+        }
+        std::cout << std::endl;
+    }
+    return 0;
+}
+```
+#### 4.3.2 continue语句
+作用：在循环语句中，跳过本次循环，执行下一次
+```c++
+#include <iostream>
+
+int main()
+{
+    for (int i = 0; i < 100; i++)
+    {
+        if (i % 2 == 0)
+        {
+            continue;// 可以筛选条件，执行到此就不再向下执行，执行下一次的循环
+        }
+        std::cout << i << std::endl;
+    }
+    return 0;
+}
+```
 ## 5. 数组
+### 5.1 概述
+所谓数组，就是一个集合，里面存放了相同类型的数据元素
+- 特点1:数组的每个元素都是相同的数据类型
+- 特点2:数组是由连续的内存位置组成的
+### 5.2 一维数组
+#### 5.2.1 一维数组的定义方式
+一维数组定义的三种方式：
+- 数据类型 数组名[数组长度];
+- 数据类型 数组名[数组长度] = {值1, 值2, ...,};
+- 数据类型 数组名[] = {值1, 值2, ...};
+
+sizeof对数组的使用
+- sizeof(数组名) 得到的是每个元素占用字节数*元素数
+  - int a[5] -> sizeof(a) = 20
+- sizeof(数组名[索引])，得到是每个元素占用字节数
+  - sizeof(a[1]) = 4
+```c++
+#include <iostream>
+
+int main()
+{
+    int arr1[5];
+    arr1[0] = 10;
+    std::cout << sizeof(arr1[1]) << " " << arr1[1] << std::endl;
+
+    int arr2[5] = {1, 2, 3, 4, 5};
+    std::cout << arr2[3] << std::endl;
+    // 在初始化没满时，会用0补齐
+    int arr4[5] = {};
+    std::cout << "arr4: " << arr4[1] << std::endl;
+
+    int arr3[] = {1, 2, 3, 4, 5};
+    std::cout << sizeof(arr3)/sizeof(int) << std::endl;
+    for (int i = 0; i < (sizeof(arr3)/sizeof(int)); i++)
+    {
+        std::cout << arr3[i] << std::endl;
+    }
+    return 0;
+}
+```
+#### 5.2.2 一维数组数组名
+用途：
+- 可以统计整个数组在内存中的长度
+- 可以获取数组在内存中的首地址
+```c++
+#include <iostream>
+
+int main()
+{
+    int a[5] = {1, 2, 3};
+    // 获取长度
+    std::cout << sizeof(a) / sizeof(int) << std::endl;
+    // 获取首地址
+    std::cout << &a[0] << std::endl;
+    std::cout << &a << std::endl;
+    std::cout << a << std::endl;
+    return 0;
+}
+```
 ## 6. 函数
 ## 7. 指针
 ## 8. 结构体

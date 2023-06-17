@@ -130,29 +130,29 @@ hello/fast:
 	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-CPP/04FlowPath/doWhile.o: CPP/04FlowPath/doWhile.cpp.o
-.PHONY : CPP/04FlowPath/doWhile.o
+CPP/05Array/arrayName.o: CPP/05Array/arrayName.cpp.o
+.PHONY : CPP/05Array/arrayName.o
 
 # target to build an object file
-CPP/04FlowPath/doWhile.cpp.o:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/04FlowPath/doWhile.cpp.o
-.PHONY : CPP/04FlowPath/doWhile.cpp.o
+CPP/05Array/arrayName.cpp.o:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/arrayName.cpp.o
+.PHONY : CPP/05Array/arrayName.cpp.o
 
-CPP/04FlowPath/doWhile.i: CPP/04FlowPath/doWhile.cpp.i
-.PHONY : CPP/04FlowPath/doWhile.i
+CPP/05Array/arrayName.i: CPP/05Array/arrayName.cpp.i
+.PHONY : CPP/05Array/arrayName.i
 
 # target to preprocess a source file
-CPP/04FlowPath/doWhile.cpp.i:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/04FlowPath/doWhile.cpp.i
-.PHONY : CPP/04FlowPath/doWhile.cpp.i
+CPP/05Array/arrayName.cpp.i:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/arrayName.cpp.i
+.PHONY : CPP/05Array/arrayName.cpp.i
 
-CPP/04FlowPath/doWhile.s: CPP/04FlowPath/doWhile.cpp.s
-.PHONY : CPP/04FlowPath/doWhile.s
+CPP/05Array/arrayName.s: CPP/05Array/arrayName.cpp.s
+.PHONY : CPP/05Array/arrayName.s
 
 # target to generate assembly for a file
-CPP/04FlowPath/doWhile.cpp.s:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/04FlowPath/doWhile.cpp.s
-.PHONY : CPP/04FlowPath/doWhile.cpp.s
+CPP/05Array/arrayName.cpp.s:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/arrayName.cpp.s
+.PHONY : CPP/05Array/arrayName.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
-	@echo "... CPP/04FlowPath/doWhile.o"
-	@echo "... CPP/04FlowPath/doWhile.i"
-	@echo "... CPP/04FlowPath/doWhile.s"
+	@echo "... CPP/05Array/arrayName.o"
+	@echo "... CPP/05Array/arrayName.i"
+	@echo "... CPP/05Array/arrayName.s"
 .PHONY : help
 
 
