@@ -130,29 +130,29 @@ hello/fast:
 	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-CPP/05Array/arrayName.o: CPP/05Array/arrayName.cpp.o
-.PHONY : CPP/05Array/arrayName.o
+C/02/logical.o: C/02/logical.cpp.o
+.PHONY : C/02/logical.o
 
 # target to build an object file
-CPP/05Array/arrayName.cpp.o:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/arrayName.cpp.o
-.PHONY : CPP/05Array/arrayName.cpp.o
+C/02/logical.cpp.o:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/02/logical.cpp.o
+.PHONY : C/02/logical.cpp.o
 
-CPP/05Array/arrayName.i: CPP/05Array/arrayName.cpp.i
-.PHONY : CPP/05Array/arrayName.i
+C/02/logical.i: C/02/logical.cpp.i
+.PHONY : C/02/logical.i
 
 # target to preprocess a source file
-CPP/05Array/arrayName.cpp.i:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/arrayName.cpp.i
-.PHONY : CPP/05Array/arrayName.cpp.i
+C/02/logical.cpp.i:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/02/logical.cpp.i
+.PHONY : C/02/logical.cpp.i
 
-CPP/05Array/arrayName.s: CPP/05Array/arrayName.cpp.s
-.PHONY : CPP/05Array/arrayName.s
+C/02/logical.s: C/02/logical.cpp.s
+.PHONY : C/02/logical.s
 
 # target to generate assembly for a file
-CPP/05Array/arrayName.cpp.s:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/arrayName.cpp.s
-.PHONY : CPP/05Array/arrayName.cpp.s
+C/02/logical.cpp.s:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/02/logical.cpp.s
+.PHONY : C/02/logical.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
-	@echo "... CPP/05Array/arrayName.o"
-	@echo "... CPP/05Array/arrayName.i"
-	@echo "... CPP/05Array/arrayName.s"
+	@echo "... C/02/logical.o"
+	@echo "... C/02/logical.i"
+	@echo "... C/02/logical.s"
 .PHONY : help
 
 

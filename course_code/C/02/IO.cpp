@@ -16,5 +16,9 @@ int main()
     printf("%X\n", a); // 2F
     printf("%#X\n", a); // 0x2F
     printf("%#x\n", a); // 0x2f
+
+    int b = 33;
+    printf("i = %d\n", b); // 33
+    printf("i = %#x\n", b); // 0X21
     return 0;
 }

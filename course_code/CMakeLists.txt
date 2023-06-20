@@ -27,8 +27,8 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
 
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/05Array/arrayName.cpp)
-# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/02/IO.cpp)
+# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/05Array/arrayName.cpp)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/02/logical.cpp)
 
 
 include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
