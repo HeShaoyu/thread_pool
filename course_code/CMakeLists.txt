@@ -13,7 +13,8 @@ message("========================================")
 message("================DEBUG===================")
 message("========================================")
 set(CMAKE_BUILD_TYPE DEBUG)
-set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -glldb")
+# set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -glldb")
+set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
@@ -27,7 +28,7 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
 
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/05Array/calcScore.cpp)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/06Function/declare.cpp)
 # file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/02/scanf_2.cpp)
 
 
