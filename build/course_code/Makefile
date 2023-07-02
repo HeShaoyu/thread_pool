@@ -130,29 +130,29 @@ hello/fast:
 	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-CPP/05Array/twoArray.o: CPP/05Array/twoArray.cpp.o
-.PHONY : CPP/05Array/twoArray.o
+CPP/05Array/calcScore.o: CPP/05Array/calcScore.cpp.o
+.PHONY : CPP/05Array/calcScore.o
 
 # target to build an object file
-CPP/05Array/twoArray.cpp.o:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o
-.PHONY : CPP/05Array/twoArray.cpp.o
+CPP/05Array/calcScore.cpp.o:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o
+.PHONY : CPP/05Array/calcScore.cpp.o
 
-CPP/05Array/twoArray.i: CPP/05Array/twoArray.cpp.i
-.PHONY : CPP/05Array/twoArray.i
+CPP/05Array/calcScore.i: CPP/05Array/calcScore.cpp.i
+.PHONY : CPP/05Array/calcScore.i
 
 # target to preprocess a source file
-CPP/05Array/twoArray.cpp.i:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.i
-.PHONY : CPP/05Array/twoArray.cpp.i
+CPP/05Array/calcScore.cpp.i:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.i
+.PHONY : CPP/05Array/calcScore.cpp.i
 
-CPP/05Array/twoArray.s: CPP/05Array/twoArray.cpp.s
-.PHONY : CPP/05Array/twoArray.s
+CPP/05Array/calcScore.s: CPP/05Array/calcScore.cpp.s
+.PHONY : CPP/05Array/calcScore.s
 
 # target to generate assembly for a file
-CPP/05Array/twoArray.cpp.s:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.s
-.PHONY : CPP/05Array/twoArray.cpp.s
+CPP/05Array/calcScore.cpp.s:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.s
+.PHONY : CPP/05Array/calcScore.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
-	@echo "... CPP/05Array/twoArray.o"
-	@echo "... CPP/05Array/twoArray.i"
-	@echo "... CPP/05Array/twoArray.s"
+	@echo "... CPP/05Array/calcScore.o"
+	@echo "... CPP/05Array/calcScore.i"
+	@echo "... CPP/05Array/calcScore.s"
 .PHONY : help
 
 

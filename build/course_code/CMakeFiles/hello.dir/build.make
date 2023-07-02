@@ -69,28 +69,28 @@ include course_code/CMakeFiles/hello.dir/progress.make
 # Include the compile flags for this target's objects.
 include course_code/CMakeFiles/hello.dir/flags.make
 
-course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o: course_code/CMakeFiles/hello.dir/flags.make
-course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o: /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/twoArray.cpp
-course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o: course_code/CMakeFiles/hello.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o"
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o -MF CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o.d -o CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/twoArray.cpp
+course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o: course_code/CMakeFiles/hello.dir/flags.make
+course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o: /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/calcScore.cpp
+course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o: course_code/CMakeFiles/hello.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o"
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o -MF CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o.d -o CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/calcScore.cpp
 
-course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.i"
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/twoArray.cpp > CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.i
+course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.i"
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/calcScore.cpp > CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.i
 
-course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.s"
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/twoArray.cpp -o CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.s
+course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.s"
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code && /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/05Array/calcScore.cpp -o CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.s
 
 # Object files for target hello
 hello_OBJECTS = \
-"CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o"
+"CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o"
 
 # External object files for target hello
 hello_EXTERNAL_OBJECTS =
 
-hello: course_code/CMakeFiles/hello.dir/CPP/05Array/twoArray.cpp.o
+hello: course_code/CMakeFiles/hello.dir/CPP/05Array/calcScore.cpp.o
 hello: course_code/CMakeFiles/hello.dir/build.make
 hello: course_code/CMakeFiles/hello.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX executable ../hello"
