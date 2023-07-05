@@ -1,7 +1,8 @@
 [
 {
-  "directory": "/home/hsy/Documents/2023/07/thread_pool/build/course_code",
-  "command": "/usr/bin/c++   -I/home/hsy/Documents/2023/07/thread_pool/build/course_code -I/home/hsy/Documents/2023/07/thread_pool/course_code -I/home/hsy/Documents/2023/07/thread_pool/include -I/home/hsy/Documents/2023/07/thread_pool/course_code/include   -O0 -Wall -g -ggdb   -std=gnu++14 -o CMakeFiles/hello.dir/CPP/06Function/declare.cpp.o -c /home/hsy/Documents/2023/07/thread_pool/course_code/CPP/06Function/declare.cpp",
-  "file": "/home/hsy/Documents/2023/07/thread_pool/course_code/CPP/06Function/declare.cpp"
+  "directory": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code",
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/include  -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/hello.dir/C/03/exchange.cpp.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/C/03/exchange.cpp",
+  "file": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/C/03/exchange.cpp",
+  "output": "course_code/CMakeFiles/hello.dir/C/03/exchange.cpp.o"
 }
 ]

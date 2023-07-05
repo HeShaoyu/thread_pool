@@ -1,1 +1,1 @@
-/usr/bin/c++   -O0 -Wall -g -ggdb   CMakeFiles/hello.dir/CPP/06Function/declare.cpp.o  -o ../hello 
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -O0 -Wall -g -glldb -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names CMakeFiles/hello.dir/C/03/exchange.cpp.o -o ../hello 
