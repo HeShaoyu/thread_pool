@@ -130,29 +130,29 @@ hello/fast:
 	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/build
 .PHONY : hello/fast
 
-C/03/exchange.o: C/03/exchange.cpp.o
-.PHONY : C/03/exchange.o
+leetcode/medium/Demo003ContinuousSubString.o: leetcode/medium/Demo003ContinuousSubString.cpp.o
+.PHONY : leetcode/medium/Demo003ContinuousSubString.o
 
 # target to build an object file
-C/03/exchange.cpp.o:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/03/exchange.cpp.o
-.PHONY : C/03/exchange.cpp.o
+leetcode/medium/Demo003ContinuousSubString.cpp.o:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/leetcode/medium/Demo003ContinuousSubString.cpp.o
+.PHONY : leetcode/medium/Demo003ContinuousSubString.cpp.o
 
-C/03/exchange.i: C/03/exchange.cpp.i
-.PHONY : C/03/exchange.i
+leetcode/medium/Demo003ContinuousSubString.i: leetcode/medium/Demo003ContinuousSubString.cpp.i
+.PHONY : leetcode/medium/Demo003ContinuousSubString.i
 
 # target to preprocess a source file
-C/03/exchange.cpp.i:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/03/exchange.cpp.i
-.PHONY : C/03/exchange.cpp.i
+leetcode/medium/Demo003ContinuousSubString.cpp.i:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/leetcode/medium/Demo003ContinuousSubString.cpp.i
+.PHONY : leetcode/medium/Demo003ContinuousSubString.cpp.i
 
-C/03/exchange.s: C/03/exchange.cpp.s
-.PHONY : C/03/exchange.s
+leetcode/medium/Demo003ContinuousSubString.s: leetcode/medium/Demo003ContinuousSubString.cpp.s
+.PHONY : leetcode/medium/Demo003ContinuousSubString.s
 
 # target to generate assembly for a file
-C/03/exchange.cpp.s:
-	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/C/03/exchange.cpp.s
-.PHONY : C/03/exchange.cpp.s
+leetcode/medium/Demo003ContinuousSubString.cpp.s:
+	cd /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build && $(MAKE) $(MAKESILENT) -f course_code/CMakeFiles/hello.dir/build.make course_code/CMakeFiles/hello.dir/leetcode/medium/Demo003ContinuousSubString.cpp.s
+.PHONY : leetcode/medium/Demo003ContinuousSubString.cpp.s
 
 # Help Target
 help:
@@ -163,9 +163,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... hello"
-	@echo "... C/03/exchange.o"
-	@echo "... C/03/exchange.i"
-	@echo "... C/03/exchange.s"
+	@echo "... leetcode/medium/Demo003ContinuousSubString.o"
+	@echo "... leetcode/medium/Demo003ContinuousSubString.i"
+	@echo "... leetcode/medium/Demo003ContinuousSubString.s"
 .PHONY : help
 
 

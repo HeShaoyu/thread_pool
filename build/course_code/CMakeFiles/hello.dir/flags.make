@@ -4,7 +4,7 @@
 # compile CXX with /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++
 CXX_DEFINES = 
 
-CXX_INCLUDES = -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/include
+CXX_INCLUDES = -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include
 
 CXX_FLAGSarm64 =  -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
 

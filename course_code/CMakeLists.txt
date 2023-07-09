@@ -28,11 +28,12 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
 
-# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/06Function/declare.cpp)
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/03/exchange.cpp)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/07Pointer/example.cpp)
+# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/03/exchange.cpp)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/leetcode/medium/Demo003ContinuousSubString.cpp)
 
 
-include_directories(${CMAKE_CURRENT_SOURCE_DIR}/include)
+# include_directories(${CMAKE_CURRENT_SOURCE_DIR}/course_code/06Function/*.h)
 set(EXECUTABLE_OUTPUT_PATH ${CMAKE_CURRENT_SOURCE_DIR}/../build)
 ADD_EXECUTABLE(hello ${SRC})
 # target_link_libraries(hello pthread)
