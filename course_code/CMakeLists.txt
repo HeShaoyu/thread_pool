@@ -13,7 +13,8 @@ message("========================================")
 message("================DEBUG===================")
 message("========================================")
 set(CMAKE_BUILD_TYPE DEBUG)
-set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -glldb")
+# set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -glldb")
+set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -fsanitize=undefined -O0 -Wall -g -glldb")
 # set(CMAKE_CXX_FLAGS_DEBUG "$ENV{CXXFLAGS} -O0 -Wall -g -ggdb")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
@@ -28,9 +29,9 @@ set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 endif()
 
 
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/07Pointer/example.cpp)
-# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/03/exchange.cpp)
-file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/leetcode/medium/Demo003ContinuousSubString.cpp)
+file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/CPP/08Struct/const.cpp)
+# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/C/03/loop.cpp)
+# file(GLOB SRC ${CMAKE_CURRENT_SOURCE_DIR}/leetcode/hard/Demo004FindMidOfTwoArray.cpp)
 
 
 # include_directories(${CMAKE_CURRENT_SOURCE_DIR}/course_code/06Function/*.h)

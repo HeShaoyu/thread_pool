@@ -98,7 +98,7 @@ ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
     return node->next;
 }
 ```
-## 3. 无重复长度的最长字串
+### 3. 无重复长度的最长字串
 本人解法：
 ```c++
 int isExist(const std::string& s, char c)
@@ -139,4 +139,31 @@ int lengthOfLongestSubstring(std::string s) {
     }
     return max_len;
 }
+```
+### 4. 寻找两个有序数组的中位数
+本人解法
+```c++
+double findMedianSortedArrays(vector<int>& nums1, vector<int>& nums2) {
+        vector<int> res_vec = nums1;
+        int index = 0;
+        for (auto i = nums2.begin(); i != nums2.end(); i++)
+        {
+            if (res_vec.size() == 0)
+            {
+                res_vec.push_back(*i);
+                continue;
+            }
+            while (*i > res_vec.at(index))
+            {
+                index++;
+                if (index >= res_vec.size())
+                    break;
+            }
+            res_vec.insert(res_vec.begin() + index, *i);
+            // index++;
+            
+        }
+        int size = res_vec.size();
+        return size % 2 == 0 ? (res_vec[size/2-1] + res_vec[size/2])/2 : res_vec[size/2];
+    }
 ```

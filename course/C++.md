@@ -1062,9 +1062,88 @@ int main()
 ```
 ## 8. 结构体
 ### 8.1 结构体基本概念
+结构体属于用户自定义的数据类型，允许用户存储不同的数据类型
 ### 8.2 结构体定义和使用
+语法：struct 结构体名 {结构体成员列表};
+
+通过结构体创建变量的方式有三种：
+- struct 结构体名 变量名
+- struct 结构体名 变量名 = {成员1值, 成员2值...}
+- 定义结构体时顺便创建变量
+```c++
+#include <iostream>
+#include <string>
+// 创建一个学生
+struct Student
+{
+    std::string name;
+    int age;
+    int score;
+};
+int main()
+{
+    Student s1;
+    s1.name = "orange";
+    s1.age = 12;
+    s1.score = 88;
+    std::cout << s1.name << " " << s1.age << " " << s1.score << std::endl;
+    Student s2 = {"apple", 10, 80};
+    std::cout << s2.name << " " << s2.age << " " << s2.score << std::endl;
+    
+    return 0;
+}
+```
 ### 8.3 结构体数组
+作用：将自定义的结构体放到数组中方便维护
+语法：struct 结构体名 数组名[元素个数] = {{}, {}, ...}
+```c++
+#include <iostream>
+#include <string>
+
+struct Student
+{
+    std::string name;
+    int age;
+};
+
+int main()
+{
+    Student s[2] = {{"apple", 10}, {"orange", 20}};
+    for (int i = 0; i < sizeof(s) / sizeof(s[0]); i++)
+    {
+        std::cout << s[i].name << " " << s[i].age << std::endl;
+    }
+    return 0;
+}
+
+```
 ### 8.4 结构体指针
+作用：通过指针访问结构体的成员
+- 利用操作符->可用通过结构体指针访问结构体属性
+```c++
+#include <iostream>
+#include <string>
+
+struct Student
+{
+    std::string name;
+    int age;
+};
+int main()
+{
+    Student s = {"apple", 60};
+    Student* p = &s;
+    std::cout << p->name << " " << p->age << std::endl;
+    return 0;
+}
+```
 ### 8.5 结构体嵌套结构体
+作用：结构体中的成员可以是另一个结构体
+
+例如：每个老师辅导一个学员，一个老师的结构体中，记录一个学生的结构体
 ### 8.6 结构体做函数参数
+作用：将结构体作为参数向函数中传递
+- 值传递
+- 地址传递
 ### 8.7 结构体中const使用场景
+作用：用const来防止误操作

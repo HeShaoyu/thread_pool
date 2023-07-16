@@ -6,7 +6,7 @@ CXX_DEFINES =
 
 CXX_INCLUDES = -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include
 
-CXX_FLAGSarm64 =  -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+CXX_FLAGSarm64 =  -fsanitize=undefined -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
 
-CXX_FLAGS =  -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
+CXX_FLAGS =  -fsanitize=undefined -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk
 

@@ -1,8 +1,8 @@
 [
 {
   "directory": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code",
-  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include  -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/hello.dir/leetcode/medium/Demo003ContinuousSubString.cpp.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/leetcode/medium/Demo003ContinuousSubString.cpp",
-  "file": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/leetcode/medium/Demo003ContinuousSubString.cpp",
-  "output": "course_code/CMakeFiles/hello.dir/leetcode/medium/Demo003ContinuousSubString.cpp.o"
+  "command": "/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/c++  -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/build/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code -I/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/include  -fsanitize=undefined -O0 -Wall -g -glldb -std=gnu++14 -arch arm64 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX13.3.sdk -o CMakeFiles/hello.dir/CPP/08Struct/const.cpp.o -c /Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/08Struct/const.cpp",
+  "file": "/Users/hectorjoker/Documents/workspace/2023/05/thread_pool/course_code/CPP/08Struct/const.cpp",
+  "output": "course_code/CMakeFiles/hello.dir/CPP/08Struct/const.cpp.o"
 }
 ]
